@@ -22,7 +22,7 @@ class Call(models.Model):
     result = models.CharField(max_length=250)
     tags = TaggableManager()
     theme = models.ForeignKey('Theme', on_delete=models.SET_NULL, null=True)
-    # seen_by ?
+    audiofile_path = models.CharField(max_length=255)
 
     @property
     def duration(self):

@@ -1,0 +1,149 @@
+[
+{
+    "model": "calls.theme",
+    "pk": 1,
+    "fields": {
+        "name": "Звонок менеджеру"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 2,
+    "fields": {
+        "name": "Встреча"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 3,
+    "fields": {
+        "name": "Обсуждение сделки"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 4,
+    "fields": {
+        "name": "Тех поддержка"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 5,
+    "fields": {
+        "name": "Консультация"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 6,
+    "fields": {
+        "name": "Забота о клиентах"
+    }
+},
+{
+    "model": "calls.theme",
+    "pk": 7,
+    "fields": {
+        "name": "ЧП"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 1,
+    "fields": {
+        "guid": "00a6d66b-d6fd-47f2-8364-87490f1a4750",
+        "timestamp_started": "2021-05-28T09:05:51Z",
+        "timestamp_finished": "2021-05-28T09:05:57Z",
+        "phone_number": "79123456789",
+        "is_finished": true,
+        "result": "Помогли клиенту с ошибкой",
+        "theme": 4,
+        "audiofile_path": "calls_dir/calln1.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 2,
+    "fields": {
+        "guid": "f351e528-997e-4026-ae26-6a55b5719f56",
+        "timestamp_started": "2021-05-28T09:17:17Z",
+        "timestamp_finished": "2021-05-28T09:18:20Z",
+        "phone_number": "79150222222",
+        "is_finished": false,
+        "result": "Обсудили детали сделки",
+        "theme": 3,
+        "audiofile_path": "files/hurdur.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 3,
+    "fields": {
+        "guid": "eb4cfded-a066-48bc-90c9-36ca168405bf",
+        "timestamp_started": "2021-05-23T09:21:55Z",
+        "timestamp_finished": "2021-05-23T09:52:06Z",
+        "phone_number": "79287999999",
+        "is_finished": true,
+        "result": "Проконсультировали клиента по продукту",
+        "theme": 5,
+        "audiofile_path": "audio/file.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 4,
+    "fields": {
+        "guid": "adc63403-53cb-4122-b3bf-aa519d0200e5",
+        "timestamp_started": "2021-05-21T13:15:54Z",
+        "timestamp_finished": "2021-05-23T13:18:49Z",
+        "phone_number": "79888888888",
+        "is_finished": true,
+        "result": "Назначили встречу",
+        "theme": 2,
+        "audiofile_path": "calls_dir/123.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 5,
+    "fields": {
+        "guid": "2e6d0a8d-4737-49f9-9a34-9ad5cd4d0f0c",
+        "timestamp_started": "2021-03-28T11:05:09Z",
+        "timestamp_finished": "2021-04-28T10:05:13Z",
+        "phone_number": "79899899988",
+        "is_finished": true,
+        "result": "Выслушали ругань клиента, смотря на котиков на реддите",
+        "theme": 5,
+        "audiofile_path": "calls_dir/12321.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 6,
+    "fields": {
+        "guid": "2a2cd1b6-2bf2-4f20-87fa-f53fd8bcaefa",
+        "timestamp_started": "2021-03-02T11:05:07Z",
+        "timestamp_finished": "2021-03-02T11:07:19Z",
+        "phone_number": "79123456789",
+        "is_finished": true,
+        "result": "Поздравили Вип-клиента с Днем Рождения",
+        "theme": 6,
+        "audiofile_path": "calls_dir/bd.mp3"
+    }
+},
+{
+    "model": "calls.call",
+    "pk": 7,
+    "fields": {
+        "guid": "c0f57b28-71a7-443c-8fa3-49d2ae7b3756",
+        "timestamp_started": "2021-03-25T21:08:45Z",
+        "timestamp_finished": "2021-03-26T11:08:52Z",
+        "phone_number": "79999999999",
+        "is_finished": true,
+        "result": "Звонок о бомбе в здании компании",
+        "theme": 7,
+        "audiofile_path": "calls_dir/omg.mp3"
+    }
+}
+]
