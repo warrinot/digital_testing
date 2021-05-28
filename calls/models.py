@@ -24,6 +24,9 @@ class Call(models.Model):
     theme = models.ForeignKey('Theme', on_delete=models.SET_NULL, null=True)
     audiofile_path = models.CharField(max_length=255)
 
+    class Meta:
+        ordering = ['-id']
+
     @property
     def duration(self):
         delta = self.timestamp_finished - self.timestamp_started
