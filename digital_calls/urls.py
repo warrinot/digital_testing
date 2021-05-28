@@ -24,7 +24,7 @@ urlpatterns = [
     path('api/', include('calls.urls')),
 
     # API docs
-    path(r'^swagger(?P<format>\.json|\.yaml)$',
+    path(r'swagger(<format>\.json|\.yaml)',
          schema_view.without_ui(cache_timeout=0),
          name='schema-json'
          ),
