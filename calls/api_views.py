@@ -9,7 +9,11 @@ from calls.paginations import CallPagination
 from django_filters.rest_framework import DjangoFilterBackend
 
 
-class CallApiViewSet(viewsets.ReadOnlyModelViewSet):
+# Если нам требуется только чтение, наследуемся от viewsets.ReadOnlyModelViewSet
+class CallApiViewSet(viewsets.ModelViewSet):
+    """
+    Api звонков
+    """
     queryset = Call.objects.all()
     serializer_class = CallSerializer
     authentication_classes = [BasicAuthentication, ]
