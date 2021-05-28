@@ -16,10 +16,10 @@ class CallApiViewSet(viewsets.ModelViewSet):
     """
     queryset = Call.objects.all()
     serializer_class = CallSerializer
+    lookup_field = 'guid'
     authentication_classes = [BasicAuthentication, ]
     permission_classes = [IsAdminUser, IsAuthenticatedOrReadOnly, ]
     filter_backends = [filters.OrderingFilter, DjangoFilterBackend]
-    lookup_field = 'guid'
     filterset_class = CallFilter
     ordering_fields = ['id']
     pagination_class = CallPagination

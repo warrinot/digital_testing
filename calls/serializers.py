@@ -17,9 +17,9 @@ class ThemeSerializer(serializers.ModelSerializer):
 
 class CallSerializer(serializers.ModelSerializer):
 
-    theme = ThemeSerializer()
+    theme = ThemeSerializer(read_only=True)
     duration = serializers.ReadOnlyField()
-    tags = TagSerializerField()
+    tags = TagSerializerField(read_only=True)
 
     class Meta:
         model = Call
