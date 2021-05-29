@@ -17,6 +17,8 @@
  python manage.py runserver
  ```
  
+ ### .env файлы не скрыты намеренно
+ 
  ### Для развертывания проекта через докер выполнить:
   ```
  mkdir digital_test
