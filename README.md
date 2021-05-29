@@ -1,7 +1,7 @@
 # digital_calls
 Проект API для списка звонков по тестовому заданию.
 
-### Для развертывания проекта выполнить:
+### Для развертывания проекта локально выполнить:
  ```
  mkdir digital_test
  cd digital_test
@@ -16,6 +16,16 @@
  
  python manage.py runserver
  ```
+ 
+ ### Для развертывания проекта через докер выполнить:
+  ```
+ mkdir digital_test
+ cd digital_test
+ git init
+ git pull https://github.com/warrinot/digital_testing.git
+ docker-compose up --build
+  ```
+ 
  Для логина использовать ahhi:123
  
  Документация к API:
