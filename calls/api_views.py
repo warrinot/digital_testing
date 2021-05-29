@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from rest_framework.authentication import BasicAuthentication
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAdminUser
+from rest_framework import permissions
 from rest_framework import filters
 from calls.models import Call
 from calls.serializers import CallSerializer
@@ -18,7 +18,7 @@ class CallApiViewSet(viewsets.ModelViewSet):
     serializer_class = CallSerializer
     lookup_field = 'guid'
     authentication_classes = [BasicAuthentication, ]
-    permission_classes = [IsAdminUser, IsAuthenticatedOrReadOnly, ]
+    permission_classes = [permissions.IsAuthenticated, ]
     filter_backends = [filters.OrderingFilter, DjangoFilterBackend]
     filterset_class = CallFilter
     ordering_fields = ['id']
