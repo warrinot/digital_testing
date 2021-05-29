@@ -27,6 +27,7 @@
  git pull https://github.com/warrinot/digital_testing.git
  docker-compose up --build
   ```
+  Может не билдится, в таком случае у файла entrypoint.sh необходимо поменять line endings на UNIX
  
  Для логина использовать ahhi:123
  
