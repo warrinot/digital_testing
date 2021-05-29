@@ -29,6 +29,10 @@
   ```
   Может не билдится, в таком случае у файла entrypoint.sh необходимо поменять line endings на UNIX
  
+ 
+ 
+ ### Так же можно оценить на http://warrinot1.pythonanywhere.com/api/
+ 
  Для логина использовать ahhi:123
  
  Документация к API:
