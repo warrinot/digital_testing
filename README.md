@@ -19,6 +19,7 @@
  Для логина использовать ahhi:123
  
  Документация к API:
+ - /swagger.json /swagger.yaml - api specification
  - /swagger - Swagger docs
  - /redoc - Redoc docs
  
