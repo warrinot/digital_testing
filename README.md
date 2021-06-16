@@ -31,9 +31,7 @@
  
  
  
- ### Так же можно оценить на http://warrinot1.pythonanywhere.com/api/
- 
- Для логина использовать ahhi:123
+ ### Так же можно оценить на http://warrinot1.pythonanywhere.com/api
  
  Документация к API:
  - /swagger.json /swagger.yaml - api specification
